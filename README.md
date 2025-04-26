@@ -1,63 +1,65 @@
-# QR-System
-📦 QR Code Generator and Scanner for Robot Automation
-📋 Project Description
-This project contains two Python applications:
+# 📦 QR-System
+**QR Code Generator and Scanner for Robot Automation**
 
-QR Code Generator: A simple GUI app (using Tkinter) that collects product delivery information (Name, Address, Pin-code, Delivery Date, Product ID) and generates a QR Code image (qrcode.png) based on the inputs.
+---
 
-QR Code Scanner & Bluetooth Sender: Another GUI app that scans the QR code using a webcam (OpenCV), extracts the information, displays it on the screen, and sends the Product ID via Bluetooth to a connected robot (using PySerial).
+## 📋 Project Description
+This project includes **two Python applications**:
 
-🚀 Features
-QR Code Generator
-Collects delivery information through a user-friendly form.
+- **QR Code Generator**: A simple GUI app (using Tkinter) that collects product delivery information (Name, Address, Pin-code, Delivery Date, Product ID) and generates a QR Code image (`qrcode.png`).
 
-Generates and saves a QR Code (qrcode.png) with the provided details.
+- **QR Code Scanner & Bluetooth Sender**: Another GUI app that scans QR codes using a webcam (OpenCV), extracts information, displays it on the screen, and sends the **Product ID** via Bluetooth (PySerial) to a connected robot.
 
-Displays a success message upon generation.
+---
 
-QR Code Scanner & Bluetooth Sender
-Uses the computer's webcam to scan QR codes.
+## 🚀 Features
 
-Extracts and displays:
+### QR Code Generator
+- Collects delivery information through a user-friendly form.
+- Generates and saves a QR Code (`qrcode.png`) with the provided details.
+- Displays a success message after generation.
 
-Name
+### QR Code Scanner & Bluetooth Sender
+- Uses the computer's webcam to scan QR codes.
+- Extracts and displays:
+  - Name
+  - Address
+  - Pin-code
+  - Delivery Date
+  - Product ID
+- Sends the extracted **Product ID** to a robot via Bluetooth.
+- Shows success or failure messages for data transmission.
 
-Address
+---
 
-Pin-code
+## 🖼️ App Screenshots
 
-Delivery Date
+| QR Generator | QR Scanner |
+|:------------:|:----------:|
+| ![QR Generator](images/generate.png) | ![QR Scanner](images/scan.png) |
 
-Product ID
+---
 
-Sends the extracted Product ID to a robot via Bluetooth connection.
+## 🛠️ Technologies Used
+- **Python**
+- **Tkinter** — For creating the GUI
+- **OpenCV** — For QR code scanning via camera
+- **qrcode** — For generating QR codes
+- **PySerial** — For Bluetooth communication
+- **Regex** — For extracting specific fields from scanned QR data
 
-Shows success or failure status for data transmission.
+---
 
-🛠️ Technologies Used
-Python
+## 🖥️ How to Run
 
-Tkinter — For creating the GUI
+### Prerequisites
+- Python 3.x installed
+- Install the required Python libraries:
 
-OpenCV — For QR Code scanning via camera
-
-qrcode — For generating QR Codes
-
-PySerial — For Bluetooth communication
-
-Regex — For extracting specific fields from the scanned QR code text
-
-🖥️ How to Run
-Prerequisites:
-Python 3.x installed
-
-Install required Python libraries:
-
-bash
-Copy
-Edit
+## bash
 pip install qrcode opencv-python pyserial
-Steps:
+
+## Steps:
 Generate a QR Code
 
 Run the qr_generator.py script.
@@ -79,7 +81,7 @@ Click Scan QR Code to capture the data.
 Click Send to Robot to transmit the Product ID via Bluetooth.
 
 
-⚠️ Notes
+## ⚠️ Notes
 
 Make sure the Bluetooth device is properly paired and accessible.
 
@@ -89,7 +91,7 @@ If you dont want to connect bluetooth, then simply commentout try and catch for 
 
 If your Bluetooth port is wrong, the scanner app will show an error.
 
-📄 License
+## 📄 License
 This project is free to use and modify!
 
-✨ Thank you for checking out my project!
+# ✨ Thank you for checking out my project!
