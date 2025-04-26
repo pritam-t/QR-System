@@ -36,7 +36,7 @@ This project includes **two Python applications**:
 
 | QR Generator | QR Scanner |
 |:------------:|:----------:|
-| ![QR Generator](images/generate.png) | ![QR Scanner](images/scan.png) |
+| ![QR Generator](https://github.com/pritam-t/QR-System/tree/main/QR-Project/images/generate.png) | ![QR Scanner](https://github.com/pritam-t/QR-System/tree/main/QR-Project/images/scan.png) |
 
 ---
 
