@@ -78,16 +78,14 @@ Click Scan QR Code to capture the data.
 
 Click Send to Robot to transmit the Product ID via Bluetooth.
 
-📷 Screenshots
-
-QR Generator	QR Scanner
-	
-(You can add screenshots later here if you want!)
 
 ⚠️ Notes
+
 Make sure the Bluetooth device is properly paired and accessible.
 
 If you face camera permission issues, allow access to your webcam.
+
+If you dont want to connect bluetooth, then simply commentout try and catch for bluetooth serial
 
 If your Bluetooth port is wrong, the scanner app will show an error.
 
